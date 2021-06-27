@@ -27,9 +27,6 @@ screen -R <PID>
 # Fermer une session
 screen -S <session_name> -X quit
 kill <session_id>
-
-ou pour fermer la session courante
-
+#ou pour fermer la session courante
 exit
-
 ```
