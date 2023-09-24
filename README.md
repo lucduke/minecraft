@@ -1,5 +1,7 @@
 # Administration de mon serveur Minecraft
 
+Penser à installer Java 8 (openjdk-8-jre)
+
 ## Utilisation de screen
 
 ### Installation
