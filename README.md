@@ -59,7 +59,7 @@ After=network.target
 [Service]
 User=minecraft-user # Remplacez par le nom de l'utilisateur sous lequel vous souhaitez exécuter le serveur
 WorkingDirectory=/chemin/vers/votre/serveur/minecraft
-ExecStart=/usr/bin/java -Xms512M -Xmx1G -jar BungeeCord.jar nogui
+ExecStart=/usr/bin/java -Xms512M -Xmx1G -jar BungeeCord.jar nogui --noconsole
 Restart=on-failure
 RestartSec=30
 StandardInput=null
@@ -100,7 +100,7 @@ After=network.target
 [Service]
 User=minecraft-user # Remplacez par le nom de l'utilisateur sous lequel vous souhaitez exécuter le serveur
 WorkingDirectory=/chemin/vers/votre/serveur/minecraft
-ExecStart=/usr/bin/java -Xms512M -Xmx2G -jar spigot-1.8.8-R0.1-SNAPSHOT-latest.jar nogui --log-limit=10M
+ExecStart=/usr/bin/java -Xms512M -Xmx2G -jar spigot-1.8.8-R0.1-SNAPSHOT-latest.jar nogui --noconsole --log-limit=10M
 Restart=on-failure
 RestartSec=30
 StandardInput=null
